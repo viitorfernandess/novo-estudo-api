@@ -1,6 +1,5 @@
-const express = require('express')
-const app = express()
+const app = require("./app")
 
-app.use(express.json())
-
-module.exports = app
+app.listen(3000, () => {
+    console.log("Servidor rodando em http://localhost:3000")
+})
